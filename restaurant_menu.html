@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chez Slim</title>
+        <style>
+            *{
+                text-align: center;
+            }
+            .price {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                width="75"
+                src="./Images/Logo.png"
+                id="header-img"
+                alt="Logo"
+            />
+            <h1>Chez Slim</h1>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order form</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <article>
+                    <img 
+                        width="150"
+                        src="./Images/tarte.jpg" 
+                        alt="Tune pie"
+                    />
+                    <h3>Tuna pie</h3>
+                    <p>
+                        A conforting dish for a cutie pie like you 🥧
+                        <br/><span class="price">4€</span>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <img 
+                        width="150"
+                        src="./Images/lasagne.webp" 
+                        alt="Lasagna"
+                    />
+                    <h3>Lasagna</h3>
+                    <p>
+                        Live, Laught, Lasagna 🍝
+                        <br/><span class="price">12€</span>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <img 
+                        width="150"
+                        src="./Images/milkshake.jpg" 
+                        alt="Vanilla milkshake"
+                    />
+                    <h3>Vanilla milkshake</h3>
+                    <p>
+                        A sweet desert and snack but not as sweet as you 🤤
+                        <br/><span class="price">5€</span>
+                    </p>
+                </article>
+            </section>
+            <section id="order-form">
+                <h2>Order form</h2>
+                <form action="">
+                    <ul>
+                        <li><label for="tuna-pie-number">Tuna pie* :</label> <input type="number" id="tuna-pie-number" min="0" max="10" value="0" required></li>
+                        <li><label for="lasagna-number">Lasagna* :</label> <input type="number" id="lasagna-number" min="0" max="10" value="0" required></li>
+                        <li><label for="milshake-number">Milkshake* :</label> <input type="number" id="milshake-number" min="0" max="10" value="0" required></li>
+                    </ul>
+                    <label for="cultery">Cultery :</label><input type="checkbox" id="cultery">
+                    <br/><br/>
+                    <label for="napkins">Napkins :</label><input type="checkbox" id="napkins">
+                    <br/><br/>
+                    <label for="requests">Sepcial requests :</label>
+                    <br/><br/>
+                    <textarea id="requests" rows="5" cols="35" maxlength="250" placeholder="Requests, allergies, ..."></textarea>
+                    <br/><br/>
+                    <input type="submit" value="Go To Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Made with love by <a href="https://www.codedex.io/@Slim59">@Slim59</a>
+            </p>
+        </footer>
+    </body>
+</html>
